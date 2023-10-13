@@ -10,6 +10,7 @@ namespace LICMVC.Controllers
     {
         public IActionResult Index()
         {
+
             List<jiraDeveloper> List = new List<jiraDeveloper>();
             var con = new SqlConnection("Data Source=Brajesh; Initial Catalog=RitshMvcDB; Integrated Security=True;");
             con.Open();
@@ -19,6 +20,7 @@ namespace LICMVC.Controllers
             {
                 int id = Convert.ToInt32(reader["id"]);
                 string ComepanyName = Convert.ToString(reader["ComepanyName"]);
+
                 string EmpolyeeName = Convert.ToString(reader["EmpolyeeName"]);
                 string Workingtype = Convert.ToString(reader["Workingtype"]);
                 string State = Convert.ToString(reader["State"]);
