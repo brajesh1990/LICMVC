@@ -10,6 +10,7 @@ namespace LICMVC.Controllers
         public IActionResult Index()
         {   
             List<Manager> list = new List<Manager>();
+            //comiited
             var con = new SqlConnection("Data Source=Brajesh; Initial Catalog=RitshMvcDB; Integrated Security=True;");
             con.Open();
             var Command = new SqlCommand("select * from Manager",con);
