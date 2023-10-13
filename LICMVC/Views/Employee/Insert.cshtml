@@ -1,0 +1,17 @@
+﻿<h1>My Empoyee From</h1>
+@model LICMVC.Models.Employee
+
+<form asp-controller="Employee" asp-action="Insert">
+    
+    <label>Name</label><br/>
+    <input type="text" asp-for="Name" /><br />
+    <label> FatherName</label>
+    <input type="text" asp-for="FatherName" /><br />
+    <label> State</label><br />
+    <input type="text" asp-for="State"/><br />
+    <label>Email</label><br />
+    <input type="text" asp-for="Email"/><br />
+    <input type="submit" value="create" class="btn btn-primary"
+
+
+</form>

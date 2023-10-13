@@ -1,0 +1,53 @@
+﻿
+@model LICMVC.Models.jiraDeveloper
+@*<form asp-controller="jiraDeveloper" asp-action="Insert" method="post">*@
+<form asp-controller="jiraDeveloper" asp-action="Insert">
+    <div class="mask d-flex align-items-center h-50 gradient-custom-3">
+        <div class="container h-50">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center bg-primary"> Comepany List Create Here</h2>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example1cg">ComepanyName</label>
+                                <input asp-for="ComepanyName" id="form3Example1cg" class="form-control form-control-lg" />
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3cg">EmpolyeeName</label>
+                                <input asp-for="EmpolyeeName" id="form3Example3cg" class="form-control form-control-lg" />
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example4cg">Workingtype</label>
+                                <input asp-for=Workingtype id="form3Example4cg" class="form-control form-control-lg" />
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example4cdg">State</label>
+                                <input asp-for=State id="form3Example4cdg" class="form-control form-control-lg" />
+                            </div>
+                            <input type="submit" value="create" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

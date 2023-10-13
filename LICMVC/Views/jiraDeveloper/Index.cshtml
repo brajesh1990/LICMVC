@@ -1,0 +1,35 @@
+﻿
+<a asp-controller="jiraDeveloper" asp-action="Insert" class="btn btn-primary accordion-header">Create</a>
+<h1 class="text-uppercase text-center bg-success">My Comepany Ditails List</h1>
+<table class="table btn-secondary" >
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>ComepanyName </th>
+            <th>EmpolyeeName </th>
+            <th>Workingtype </th>
+            <th>State</th>
+            <th colspan="2">Action</th> 
+            
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr> <td>@item.id</td>
+                <td>@item.ComepanyName </td>
+                <td>@item.EmpolyeeName </td>
+                <td>@item.Workingtype</td>
+                <td>@item.State</td>
+                <td><a asp-controller="jiraDeveloper" asp-action="Edit" asp-route-id="@item.id" class=" btn btn btn btn btn-warning">Edit</a></td>
+                <td><a asp-controller="jiraDeveloper" asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger suscess">Delete</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+

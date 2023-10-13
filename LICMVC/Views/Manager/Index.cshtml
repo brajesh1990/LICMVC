@@ -1,0 +1,25 @@
+﻿
+<a asp-controller="Manager" asp-action="Insert" class="btn btn-primary">NewCreate</a>
+<h1>Microsoft Ignite list</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>MallName </th>
+            <th> ShopNo</th>
+            <th>Address </th>
+            <th>State</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MallName </td>
+                <td>@item.ShopNo </td>
+                <td>@item.Address</td>
+                <td>@item.State</td>
+            </tr>
+        }
+    </tbody>
+</table>

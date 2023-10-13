@@ -1,0 +1,27 @@
+﻿
+<a asp-controller="Empolyee" asp-action="Insert" class="btn btn-primary">Create</a>
+<h1>My Empolyee list</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>State</th>
+            <th>Email</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.FatherName</td>
+                <td>@item.State</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
